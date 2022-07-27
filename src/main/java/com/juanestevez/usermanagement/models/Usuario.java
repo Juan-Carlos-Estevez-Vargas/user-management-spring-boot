@@ -14,7 +14,7 @@ import javax.persistence.Table;
 @Table(name = "usuarios")
 @ToString @EqualsAndHashCode
 public class Usuario {
-    
+
     @Id
     @Getter @Setter @Column(name = "id")
     private Long id;
