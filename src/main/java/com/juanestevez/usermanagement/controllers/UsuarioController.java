@@ -35,27 +35,9 @@ public class UsuarioController {
         usuarioDao.registrar(usuario);
     }
 
-    public Usuario editar(){
-        Usuario usuario = new Usuario();
-        usuario.setNombre("Juan");
-        usuario.setApellido("Estevez");
-        usuario.setEmail("juan@example.com");
-        usuario.setTelefono("3213213213");
-        return usuario;
-    }
-
     @DeleteMapping("/api/usuario/{id}")
     public void eliminar(@PathVariable Long id){
         usuarioDao.eliminar(id);
     }
 
-    @GetMapping("/usuario3")
-    public Usuario buscar(){
-        Usuario usuario = new Usuario();
-        usuario.setNombre("Juan");
-        usuario.setApellido("Estevez");
-        usuario.setEmail("juan@example.com");
-        usuario.setTelefono("3213213213");
-        return usuario;
-    }
 }
