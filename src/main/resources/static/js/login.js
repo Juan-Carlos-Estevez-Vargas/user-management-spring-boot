@@ -1,6 +1,7 @@
 // Call the dataTables jQuery plugin
 $(document).ready(function() {});
 
+// Realiza una petición y se conecta al backend para iniciar sesión en el aplicativo.
 async function iniciarSesion(){
   let datos = {};
   datos.email = document.getElementById('txtEmail').value;

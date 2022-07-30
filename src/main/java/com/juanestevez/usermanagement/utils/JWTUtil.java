@@ -14,6 +14,11 @@ import javax.xml.bind.DatatypeConverter;
 import java.security.Key;
 import java.util.Date;
 
+/**
+ * JWT Configuration: Esta clase no se como funciona pero asi como esta funciona.
+ *
+ * @author Juan Carlos Estevez Vargas.
+ */
 @Component
 public class JWTUtil {
 

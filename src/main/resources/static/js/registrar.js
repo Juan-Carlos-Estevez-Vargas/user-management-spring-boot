@@ -1,6 +1,7 @@
 // Call the dataTables jQuery plugin
 $(document).ready(function() {});
 
+// Realiza una petición y se conecta al backend para registrar un usuario.
 async function registrarUsuario(){
   let datos = {};
   datos.nombre = document.getElementById('txtNombre').value;

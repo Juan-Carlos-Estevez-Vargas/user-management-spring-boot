@@ -1,4 +1,5 @@
 // Call the dataTables jQuery plugin
+// Esto se ejecuta al cargar la página.
 $(document).ready(function() {
   cargarUsuarios();
   $('#usuarios').DataTable();
@@ -9,6 +10,8 @@ function actualizarEmailDelUsuario() {
     document.getElementById('txt-email-usuario').outerHTML = localStorage.email;
 }
 
+// Realiza una petición y se conecta al backend para listar los usuarios presentes
+// en el sistema.
 async function cargarUsuarios(){
   const request = await fetch('/api/usuarios', {
     method: 'GET',
